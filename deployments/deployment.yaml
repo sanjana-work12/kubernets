@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp-deployment
+  name: redis-deploy
   labels:
     app: webapp
 spec:
@@ -15,7 +15,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - name: nginx-container
-        image: nginx:latest
+      - name: redis-container
+        image: redis
         ports:
         - containerPort: 80
