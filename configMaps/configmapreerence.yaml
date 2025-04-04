@@ -4,7 +4,7 @@ metadata:
   name: webapp-pod
 spec:
   containers:
-  - name: webapp-container
+  - name: webappconfig-container
     image: nginx
     env:
     - name: APP_COLOR
